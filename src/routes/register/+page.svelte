@@ -49,6 +49,13 @@
 					</div>
 				{/if}
 
+				<p>
+					Already have an account?{' '}
+					<span>
+						<a href="/login">Login</a>
+					</span>
+				</p>
+
 				<TextInput label="Display Name" name="name" bind:value={user.name} required />
 				<TextInput label="Email" name="email" type="email" bind:value={user.email} required />
 				<TextInput
@@ -90,12 +97,6 @@
 					bind:value={user.long}
 				/>
 				<input type="submit" value="Register" />
-				<p>
-					Already have an account?{' '}
-					<span>
-						<a href="/login">Login</a>
-					</span>
-				</p>
 			</form>
 		</div>
 		<div class="right">
